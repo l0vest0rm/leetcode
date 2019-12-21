@@ -1,7 +1,7 @@
 package main
 
 import (
-	"utils"
+	"github.com/l0vest0rm/leetcode/solve/go/utils"
 )
 
 func main() {
