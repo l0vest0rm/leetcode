@@ -1,9 +1,5 @@
 package main
 
-import (
-	"github.com/l0vest0rm/leetcode/solve/go/utils"
-)
-
 func main() {
 
 }
@@ -25,15 +21,12 @@ func p1twoSum(nums []int, target int) []int {
 		return nil
 	}
 
-	utils.Quicksort()
-
-	for i := 0; i < len(nums)-1; i++ {
-		for j := i + 1; j < len(nums); j++ {
-			if nums[i]+nums[j] == target {
-				ret := []int{i, j}
-				return ret
-			}
+	hash := make(map[int]int, len(nums)/2)
+	for i := 0; i < len(nums); i++ {
+		if _, ok := hash[nums[i]]; ok {
+			return []int{hash[nums[i]], i}
 		}
+		hash[target-nums[i]] = i
 	}
 
 	return nil

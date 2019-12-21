@@ -6,8 +6,8 @@ import (
 )
 
 func TestP1(t *testing.T) {
-	nums := []int{2, 7, 11, 15}
-	target := 9
+	nums := []int{3, 3}
+	target := 6
 	ret := p1twoSum(nums, target)
 	fmt.Println(ret)
 }
