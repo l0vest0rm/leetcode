@@ -1,3 +1,8 @@
 .DS_Store
 target
 .idea
+solve/java/src/main/main.iml
+solve/java/src/test/test.iml
+.classpath
+.project
+.settings
