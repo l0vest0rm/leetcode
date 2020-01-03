@@ -1,8 +1,5 @@
 package introduction.to.algorithm;
 
-import leetcode.p001.Solution;
-
-import java.util.Arrays;
 import com.google.gson.Gson;
 
 /**
